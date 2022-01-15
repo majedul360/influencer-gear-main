@@ -108,7 +108,7 @@ section {
     left: 0;
 }
 
-.home .container .image:hover .camera-img {
+.home:hover .camera-img {
     animation: rotate 3s linear;
 }
 
