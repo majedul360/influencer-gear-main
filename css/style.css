@@ -7,6 +7,7 @@
     --white-light: #D9DBE1;
     --btn-bg: #E02C6D;
     --review: #FB8200;
+    --footer-bg: #0A0826;
     --shadow : 0 0 4rem rgba(0, 0, 0, 0.15);
     --border:.1rem solid var(--black);
 }
@@ -178,6 +179,48 @@ section {
 .collection .see-btn .btn:hover i {
     margin-left: .5rem;
 }
+
+/* footer starts  */
+
+footer {
+    background: var(--footer-bg);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+footer p {
+    color: var(--white-light);
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer .right {
+    margin-top:0;
+}
+
+footer .follow {
+    margin-top: 2rem;
+}
+
+footer .follow i {
+    font-size: 2.5rem;
+    color: var(--white-light);
+    margin-right:1rem;
+    cursor: pointer;
+}
+
+footer .follow i:hover {
+    color: var(--btn-bg);
+}
+
+
+
+
 /* media queries */
 
 @media (max-width:1200px) {
