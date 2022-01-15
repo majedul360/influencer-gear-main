@@ -122,6 +122,26 @@ section {
     }
 }
 
+/* logo section start  */
+.logo .logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+    border: .1rem solid;
+    border-image:linear-gradient(to right, transparent, var(--white-light),transparent);
+    border-image-slice: 1;
+    padding:1rem 0;
+}
+
+.logo .logo-container .image {
+    text-align: center;
+}
+
+.logo .logo-container .image img {
+    width:50%;
+}
+
 /* collection section start  */
 
 .collection .product-container .product {
