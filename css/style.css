@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --black: #3A3A3A;
+    --black-ligt: #787885;
+    --white:#fff;
+    --white-light: #D9DBE1;
+    --btn-bg: #E02C6D;
+    --review: #FB8200;
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+.flex-col{
+    flex: 1 1 40rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.article {
+    font-size: 1.7rem;
+    color: var(--black);
+    line-height: 3rem;
+    margin: 1rem 0;
+    text-transform: none;
+}
+
+
+.btn {
+    display: inline-block;
+    background: var(--btn-bg);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.btn i {
+    margin-left: .5rem;
+    transition: all .5s ease;
+}
+
+.btn:hover i{
+    margin-left: 2.5rem;
+}
+/* common styls end  */
+/* home section start  */
+
+.home .container .box h1 {
+    font-size: 5rem;
+    color: var(--black);
+}
+
+.home .container .image {
+    position: relative;
+}
+
+.home .container .image img {
+    width: 100%;
+} 
+
+
+.home .container .image .camera-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home .container .image:hover .camera-img {
+    animation: rotate 3s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* collection section start  */
+
+
+
+/* media queries */
+
+@media (max-width:1200px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .home .container .image {
+        order: -1;
+    }
+}
+
+@media (max-width:450px) {
+   html {
+    font-size: 52%;
+   }
+}
