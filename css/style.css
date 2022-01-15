@@ -27,6 +27,8 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
 }
 
 section {
@@ -87,6 +89,56 @@ section {
     margin-bottom: 4rem;
 }
 /* common styls end  */
+
+/* header section start  */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding:2rem 9%;
+    background: var(--white);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow:0 2rem 5rem rgba(0, 0, 0, 0.15);
+}
+
+header #menu-btn {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-right: auto;
+    display: none;
+}
+
+
+header .logo {
+    font-size: 2rem;
+    color: var(--black);
+    margin-right: auto;
+    font-weight: 600;
+}
+
+header nav a {
+    font-size:2rem;
+    color: var(--black);
+    margin-right:2rem;
+}
+
+header nav a:hover {
+    color: var(--btn-bg);
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color:var(--black);
+    margin-left: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--btn-bg);
+}
+
 /* home section start  */
 
 .home .container .box h1 {
@@ -123,7 +175,7 @@ section {
 }
 
 /* logo section start  */
-.logo .logo-container {
+.logos .logos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     align-items: center;
@@ -134,11 +186,11 @@ section {
     padding:1rem 0;
 }
 
-.logo .logo-container .image {
+.logos .logos-container .image {
     text-align: center;
 }
 
-.logo .logo-container .image img {
+.logos .logos-container .image img {
     width:50%;
 }
 
@@ -284,12 +336,13 @@ footer .follow i:hover {
     color: var(--btn-bg);
 }
 
-
-
-
 /* media queries */
 
 @media (max-width:1200px) {
+    header {
+        padding:2rem 5%;
+    }
+
     section {
         padding: 5rem 5%;
     }
@@ -300,15 +353,48 @@ footer .follow i:hover {
         font-size: 55%;
     }
 
+    header {
+        padding:2rem;
+    }
+
     section {
         padding: 3rem 2rem;
     }
 }
 
 @media (max-width:768px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    header #menu-btn {
+        display: block;
+    }
+
+    header nav {
+        position:absolute;
+        top:99%;
+        left: 0;
+        right: 0;
+        background:var(--white);
+        display: none;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav a {
+        display: block;
+        margin: 1.5rem 2rem;
+    }
+
+
     .home .container .image {
         order: -1;
     }
+
 }
 
 @media (max-width:450px) {
