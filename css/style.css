@@ -7,6 +7,8 @@
     --white-light: #D9DBE1;
     --btn-bg: #E02C6D;
     --review: #FB8200;
+    --shadow : 0 0 4rem rgba(0, 0, 0, 0.15);
+    --border:.1rem solid var(--black);
 }
 
 
@@ -27,7 +29,7 @@ html {
 }
 
 section {
-    padding: 3rem 9%;
+    padding: 5rem 9%;
 }
 
 
@@ -45,7 +47,7 @@ section {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
+    gap:3rem;
 }
 
 .article {
@@ -92,7 +94,6 @@ section {
     width: 100%;
 } 
 
-
 .home .container .image .camera-img {
     position: absolute;
     top: 0;
@@ -115,13 +116,73 @@ section {
 
 /* collection section start  */
 
+.collection h2 {
+    text-align: center;
+    font-size:3rem;
+    color: var(--black);
+    margin-bottom: 4rem;
+}
 
+.collection .product-container .product {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+}
 
+.collection .product-container .product img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.collection .product-container .product h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+.collection .product-container .product .price {
+    font-size: 2.5rem;
+    color: var(--black-ligt);
+}
+
+.collection .product-container .product .review {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.collection .product-container .product .review .star i {
+    font-size: 1.5rem;
+    color: var(--review);
+}
+
+.collection .product-container .product .review span{
+    font-size: 1.5rem;
+    color: var(--black-ligt);
+}
+
+.collection .see-btn {
+    text-align: end;
+    margin-top: 2rem;
+}
+
+.collection .see-btn .btn {
+    background: var(--white);
+    color: var(--btn-bg);
+    box-shadow: var(--shadow);
+}
+
+.collection .see-btn .btn:hover i {
+    margin-left: .5rem;
+}
 /* media queries */
 
 @media (max-width:1200px) {
     section {
-        padding: 3rem 5%;
+        padding: 5rem 5%;
     }
 }
 
