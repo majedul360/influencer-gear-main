@@ -79,6 +79,13 @@ section {
 .btn:hover i{
     margin-left: 2.5rem;
 }
+
+.section-title {
+    text-align: center;
+    font-size:3rem;
+    color: var(--black);
+    margin-bottom: 4rem;
+}
 /* common styls end  */
 /* home section start  */
 
@@ -116,13 +123,6 @@ section {
 }
 
 /* collection section start  */
-
-.collection h2 {
-    text-align: center;
-    font-size:3rem;
-    color: var(--black);
-    margin-bottom: 4rem;
-}
 
 .collection .product-container .product {
     padding: 2rem;
@@ -178,6 +178,52 @@ section {
 
 .collection .see-btn .btn:hover i {
     margin-left: .5rem;
+}
+
+/* contact secton start  */
+.contact form {
+    border: var(--border);
+    padding: 2rem;
+}
+
+
+.contact form .box {
+    width: 100%;
+    background: var(--white-light);
+    border: var(--border);
+    padding: 1.2rem 1.4rem;
+    margin: .7rem;
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.contact form textarea {
+    resize: none;
+    height:18rem;
+}
+
+.contact form .box::placeholder {
+    color: black;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.contact form .box:focus {
+    background: var(--footer-bg);
+    color: var(--white);
+}
+
+.contact form .box:focus::placeholder {
+    color: var(--white);
+}
+
+.contact .map {
+    border: var(--border);
+    padding: 2rem;
+}
+
+.contact .map iframe {
+    width: 100%;
 }
 
 /* footer starts  */
